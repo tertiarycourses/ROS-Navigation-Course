@@ -1,0 +1,24 @@
+# Activity: LIDAR on Raspberry Pi 4
+
+$ mkdir -p ~/catkin_ws/src
+$ sudo git clone  https://github.com/Slamtec/rplidar_ros.git
+$ cd ~/catkin_ws/
+$ catkin_make
+$ source ~/catkin_ws/devel/setup.bash
+
+$ roslaunch rplidar_ros rplidar.launch
+
+# Activity: RPLidar in Headless Mode
+
+$ nano ~/.bashrc
+$ export ROS_MASTER_URI=http://[your-desktop-machine-ip]:11311
+$ source ~/.bashrc
+$ roscore
+
+$ ~/.bashrc
+$ export ROS_MASTER_URI=http://[your-desktop-machine-ip]:11311
+$ export ROS_IP=[your-desktop-machine-ip]
+$ source ~/.bashrc
+$ roslaunch rplidar_ros rplidar.launch
+
+
