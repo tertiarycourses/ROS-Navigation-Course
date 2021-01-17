@@ -1,36 +1,5 @@
 # Activity: Turtlebot3 Burger
 
-$ cd ~/catkin_ws/src/
-$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
-$ cd ~/catkin_ws && catkin_make
-
-$ export TURTLEBOT3_MODEL=burger
-$ roslaunch turtlebot3_fake turtlebot3_fake.launch
-
-$ export TURTLEBOT3_MODEL=burger
-$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
-
-
-# Activity: Gazebo - Empty World
-
-$ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
-$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
-
-
-# Activity: Gazebo - World
-
-$ roslaunch turtlebot3_gazebo turtlebot3_world.launch
-$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
-
-# Activity: Gazebo - House
-
-$ roslaunch turtlebot3_gazebo turtlebot3_house.launch
-$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
-
-# Activity: RViz
-
-$ roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
-
 # Activity: Virtual SLAM
 
 roslaunch turtlebot3_gazebo turtlebot3_world.launch
