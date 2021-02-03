@@ -1,0 +1,23 @@
+# Get Started
+
+$ sudo apt-get install ros-kinetic-franka-description
+
+$ cd ~/ws_moveit/src
+$ rm -rf panda_moveit_config
+$ atkin clean panda_moveit_config
+
+# Step 1: Start
+
+$ rosecore
+$ roslaunch moveit_setup_assistant setup_assistant.launch
+
+# Step 9: Gazebo Simulation
+
+$ roslaunch gazebo_ros empty_world.launch paused:=true use_sim_time:=false gui:=true throttled:=false recording:=false debug:=true
+
+% rosrun gazebo_ros spawn_model -file </path_to_new_urdf/file_name.urdf> -urdf -x 0 -y 0 -z 1 -model panda
+
+# Activity: Testing Panda Robot
+
+$ roslaunch panda_moveit_config demo.launch rviz_tutorial:=true
+
