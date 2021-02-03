@@ -1,6 +1,7 @@
 
 # Install OpenManipulator-X packages
 
+<<<<<<< HEAD
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
@@ -53,6 +54,9 @@ $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_p
 $ roslaunch open_manipulator_save_and_load save_and_load.launch
 $ roslaunch open_manipulator_teleop open_manipulator_teleop_keyboard.launch
 
+=======
+# Activity: Virtual SLAM
+>>>>>>> 6bd3c4007b775515210ab0d2b8b289202263bc6a
 
 # Install Turtlebot3 Packages
 
